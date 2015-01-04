@@ -30,20 +30,10 @@ p /* Removes default p formatting */
     margin: 0;
 }
 
-.transparent
+.transparent-black
 {
-    
-}
-
-#wrapper /* makes black see-through strip down entire length. Figured out how
-to do from http://stackoverflow.com/questions/15923019/how-to-make-a-div-fill-the-remaning-vertical-space-using-css */
-{
-    margin-left: auto;
-    margin-right: auto;
-    width: 800px;
-    height: 100%;
-    background: black;
     opacity: 0.6;
+    background: black;
 }
 
 #background-image
@@ -55,6 +45,7 @@ to do from http://stackoverflow.com/questions/15923019/how-to-make-a-div-fill-th
     left:-50%;
     width:200%;
     height:200%;
+    z-index: -2;
 }
 
 #background-image img
@@ -69,6 +60,33 @@ to do from http://stackoverflow.com/questions/15923019/how-to-make-a-div-fill-th
     min-height:50%;
 }
 
+#transparent-strip /* makes black see-through strip down entire length. Figured out how
+to do from http://stackoverflow.com/questions/15923019/how-to-make-a-div-fill-the-remaning-vertical-space-using-css */
+{
+    position: fixed;
+    right: 50%;
+    margin-right: -400px;
+    width: 800px;
+    height: 100%;
+    opacity: 0.6;
+    background: black;
+    z-index: -1;
+}
+
+#spacer
+{
+    height: 100%;
+    min-height: 100%
+}
+
+#page-content
+{
+    margin-left: auto;
+    margin-right: auto;
+    width: 800px;
+    height: 100%;
+}
+
 header
 {
     height: 1.5em;
@@ -79,8 +97,11 @@ header
     font-size: 40px;
     padding: 15px 10px 0px 10px;
     text-align: center;
-    background-image: url("images/header-background.png");
-    color: black;
+    color: white;
+    background: -webkit-linear-gradient(rgba(10,15,4,1),rgba(0,0,0,)); /*Safari 5.1-6*/
+    background: -o-linear-gradient(rgba(10,15,4,1),rgba(0,0,0,0)); /*Opera 11.1-12*/
+    background: -moz-linear-gradient(rgba(10,15,4,1),rgba(0,0,0,0)); /*Fx 3.6-15*/
+    background: linear-gradient(rgba(10,15,4,1), rgba(0,0,0,0)); /*Standard*/
 }
 
 #header-name
@@ -92,21 +113,20 @@ header
 {
     font-size: 20px;
     color: white;
-    background: black;
     height: 3em;
     clear: both;
 }
 
 #nav-div ul
 {
-    height: 100%;
+
 }
 
 #nav-div li
 {
     float: left;
     width: 25%; /* each menu item takes up 1/4 of the content width */
-    height: 100%;
+    height: 3em;
 }
 
 #nav-div a
@@ -114,7 +134,8 @@ header
     text-align: center;
     display: block;
     margin: 5px;
-    height: 100%;
+    height: 3em;
+
 }
 
 #nav-div li:hover,li:active /* matches header strip */
@@ -125,7 +146,7 @@ header
 
 #section-div
 {
-    padding: 30px;
+    padding: 50px;
 }
 
 #aside-div
