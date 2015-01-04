@@ -4,9 +4,11 @@
 html, body
 {
     font-family: "Gill Sans MT", "Gill Sans", GillSans, Verdana, sans-serif;
+    font-size: 20px;
+    color: white;
     margin: 0;
     padding: 0;
-    overflow: hidden;
+    /*overflow: hidden;*/
     height: 100%;
 }
 
@@ -23,24 +25,25 @@ ul /* Removes default ul formatting */
     padding: 0;
 }
 
-/** HEADER ********************************************************************/
-#wrapper /* makes black see-through strip across entire width */
+p /* Removes default p formatting */
+{
+    margin: 0;
+}
+
+#wrapper /* makes black see-through strip down entire length. Figured out how
+to do from http://stackoverflow.com/questions/15923019/how-to-make-a-div-fill-the-remaning-vertical-space-using-css */
 {
     margin-left: auto;
     margin-right: auto;
     width: 800px;
     height: 100%;
-    font-size: 20px;
-    color: white;
     background: black;
     opacity: 0.6;
-    padding-left: 2px;
 }
 
-/** BACKGROUND IMAGE **********************************************************/
+#background-image
 /* Background fill image solution from
    http://css-tricks.com/766-how-to-resizeable-background-image/ */
-#background-image
 {
     position: fixed;
     top:-50%;
@@ -51,7 +54,7 @@ ul /* Removes default ul formatting */
 
 #background-image img
 {
-    position:absolute;
+    position: absolute;
     top:0;
     left:0;
     right:0;
@@ -59,6 +62,86 @@ ul /* Removes default ul formatting */
     margin:auto;
     min-width:50%;
     min-height:50%;
+}
+
+header
+{
+    height: 1.5em;
+}
+
+#header-div
+{
+    font-size: 40px;
+    padding: 15px 10px 0px 10px;
+    text-align: center;
+}
+
+#header-name
+{
+    font-size: 15px;
+}
+
+#nav-div
+{
+    font-size: 20px;
+    color: white;
+    background: black;
+    height: 3em;
+    clear: both;
+}
+
+#nav-div ul
+{
+    height: 100%;
+}
+
+#nav-div li
+{
+    float: left;
+    width: 25%; /* each menu item takes up 1/4 of the content width */
+    height: 100%;
+}
+
+#nav-div a
+{
+    text-align: center;
+    display: block;
+    margin: 5px;
+    height: 100%;
+}
+
+#nav-div li:hover,li:active /* matches header strip */
+{
+    background-color: white;
+    color: black;
+}
+
+#section-div
+{
+    
+}
+
+#aside-div
+{
+    position: absolute;
+    /*top: 50%;*/
+    right: 10px;
+    bottom: 20%;
+    background: #660011;
+    color: white;
+    height: 10em;
+    padding: 5px;
+}
+
+#aside-div ul
+{
+    font-weight: bold;
+}
+
+#aside-div li
+{
+    font-weight: normal;
+    font-size: 75%;
 }
 
 /* images ***********************
