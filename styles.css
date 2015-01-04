@@ -1,0 +1,69 @@
+/* styles.css */
+
+/** Whole page ****************************************************************/
+html, body
+{
+    font-family: "Gill Sans MT", "Gill Sans", GillSans, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    height: 100%;
+}
+
+a
+{
+    color: inherit;
+    text-decoration: none;
+}
+
+ul /* Removes default ul formatting */
+{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+/** HEADER ********************************************************************/
+#wrapper /* makes black see-through strip across entire width */
+{
+    margin-left: auto;
+    margin-right: auto;
+    width: 800px;
+    height: 100%;
+    font-size: 20px;
+    color: white;
+    background: black;
+    opacity: 0.6;
+    padding-left: 2px;
+}
+
+/** BACKGROUND IMAGE **********************************************************/
+/* Background fill image solution from
+   http://css-tricks.com/766-how-to-resizeable-background-image/ */
+#background-image
+{
+    position: fixed;
+    top:-50%;
+    left:-50%;
+    width:200%;
+    height:200%;
+}
+
+#background-image img
+{
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    margin:auto;
+    min-width:50%;
+    min-height:50%;
+}
+
+/* images ***********************
+the_kings_game.jpg
+by: Levente Fulop
+from: https://flic.kr/p/7pbSgc
+grabbed 1/3/2015
+*/
