@@ -30,6 +30,11 @@ p /* Removes default p formatting */
     margin: 0;
 }
 
+.transparent
+{
+    
+}
+
 #wrapper /* makes black see-through strip down entire length. Figured out how
 to do from http://stackoverflow.com/questions/15923019/how-to-make-a-div-fill-the-remaning-vertical-space-using-css */
 {
@@ -74,6 +79,8 @@ header
     font-size: 40px;
     padding: 15px 10px 0px 10px;
     text-align: center;
+    background-image: url("images/header-background.png");
+    color: black;
 }
 
 #header-name
@@ -118,7 +125,7 @@ header
 
 #section-div
 {
-    
+    padding: 30px;
 }
 
 #aside-div
