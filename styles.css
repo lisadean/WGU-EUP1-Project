@@ -147,17 +147,19 @@ header
 #section-div
 {
     padding: 50px;
+    position: relative;
+    top: 5px;
 }
 
 #aside-div
 {
-    position: absolute;
+    position: fixed;
     /*top: 50%;*/
     right: 10px;
-    bottom: 20%;
+    bottom: 0;
     background: #660011;
     color: white;
-    height: 10em;
+    width: 200px;
     padding: 5px;
 }
 
