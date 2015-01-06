@@ -36,6 +36,11 @@ p /* Removes default p formatting */
     background: black;
 }
 
+.bold
+{
+    
+}
+
 #background-image
 /* Background fill image solution from
    http://css-tricks.com/766-how-to-resizeable-background-image/ */
