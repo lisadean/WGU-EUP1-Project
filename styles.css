@@ -38,7 +38,12 @@ p /* Removes default p formatting */
 
 .bold
 {
-    
+    font-weight: bold;
+}
+
+.italics
+{
+    font-style: italic;
 }
 
 #background-image
