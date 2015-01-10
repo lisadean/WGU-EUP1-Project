@@ -108,7 +108,6 @@ to do from http://stackoverflow.com/questions/15923019/how-to-make-a-div-fill-th
     margin-right: auto;
     width: 800px;
     height: 100%;
-    position: relative;
 }
 
 header
@@ -172,6 +171,7 @@ header
 {
     padding: 50px;
     top: 5px;
+    position: relative;
 }
 
 #section-div table
